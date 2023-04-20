@@ -384,7 +384,7 @@ input, select, textarea {
 			}
 
 			#main .item.intro {
-				background-image: linear-gradient(to right, black, red);
+				background-color: #CBE4DE;
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
@@ -403,6 +403,7 @@ input, select, textarea {
 				#main .item.intro h1 {
 					font-size: 3em;
 					line-height: 1em;
+					color: #0a0f1c;
 				}
 
 				#main .item.intro p {
@@ -410,6 +411,7 @@ input, select, textarea {
 					line-height: 1.5em;
 					margin: 0.5em 0 0 0;
 					opacity: 0.65;
+					color: #0a0f1c;
 				}
 
 			#main .item.thumb {
@@ -815,8 +817,9 @@ input, select, textarea {
 /* The navigation bar */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #212121;
     width: 100%; /* Full width */
+
 }
 /* Links inside the navbar */
 .navbar a {
