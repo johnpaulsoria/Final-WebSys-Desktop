@@ -66,6 +66,39 @@ input, select, textarea {
 	appearance: none;
 }
 
+
+footer {
+	background-color: none;
+	padding: 20px;
+  }
+  
+  .social-media-icons {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+  }
+  
+  .social-media-icons a {
+	display: inline-block;
+	margin: 0 10px;
+	text-align: center;
+	text-decoration: none;
+  }
+  
+  .social-media-icons img {
+	width: 30px;
+	height: 30px;
+  }
+  
+  /* Social media icon text */
+  .social-media-icons span {
+	display: block;
+	margin-top: 5px;
+	font-size: 14px;
+	font-weight: bold;
+  }
+
+  
 /* Basic */
 
 	html {
