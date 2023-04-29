@@ -63,6 +63,7 @@ body{
     height: 50%;
     padding: 5px 10px;
     border-radius: 25px;
+    color: #f2f2f2;
 }
 
 .input-group {
@@ -266,6 +267,7 @@ select{
         width: 90%;
         padding: 5px 10px;
         border-radius: 25px;
+        color: #f2f2f2;
     }
     .input {
         border: solid 1.5px #9e9e9e;
