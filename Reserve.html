@@ -1,87 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Reservation</title>
+    <title>Reserve</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../Final-WebSys-Desktop/reserve_style.css">
-    <link rel = "icon" href = "../Final-WebSys-Desktop/logo.jpg" type = "image/x-icon">
+    <link rel="stylesheet" href="../CSS/reserve_style.css">
+    <link rel = "icon" href = "../images/logo.jpg" type = "image/x-icon">
 </head>
 <body>
     <section>
         <nav class="navbar">
             <div class="logo">
-                <img src="../Final-WebSys-Desktop/logo.jpg">
+                <img src="../images/logo.jpg">
             </div>
         <ul class="menu">
-            <li><a href="../Final-WebSys-Desktop/index.html">Home</a></li>
-            <li><a href="../Final-WebSys-Desktop/Reserve.html">Reserve</a></li>
-            <li><a href="../Final-WebSys-Desktop/admin-login.html">Admin</a></li>
-            <li><a href="../Final-WebSys-Desktop/offer.html">Offers</a></li>
+            <li><a href="../HTML/index.html">Home</a></li>
+            <li><a href="../HTML/Reserve.html">Reserve</a></li>
+            <li><a href="../HTML/admin-login.html">Admin</a></li>
+            <li><a href="../HTML/offer.html">Offers</a></li>
         </ul>
         </nav>
     </section>
 
     <section>
-        <form class="main-form">
-            <center>
-                <div class="input-group">
-                    <br>
-                    
-                    <label for="inputField">Full Name</label><br>
-                    <input type="text" id="fullName" name="fullName" class="input"><br><br>
-
-                    <label for="inputField">Phone Number</label><br>
-                    <input type="number" id="phoneNumber" name="phoneNumber" class="input"><br><br>
-                    
-                    
-                    <label for="inputField">E-mail Address</label><br>
-                    <input type="email" id="emailAdd" name="emailAdd" class="input"><br><br>
-                    
-                    
-                    <label for="inputField">Current Address</label><br>
-                    <input type="text" id="address" name="address" class="input"><br><br>
-                    
-                    
-                    <label for="inputField">Destination Address</label><br>
-                    <select id="destiAdd" name="destiAdd">
-                        <option value="Manila, Philippines">Manila, Philippines</option>
-                        <option value="Taipei, Taiwan">Taipei, Taiwan</option>
-                        <option value="Tokyo, Japan">Tokyo, Japan</option>
-                        <option value="Beijing, China">Beijing, China</option>
-                        <option value="Jakarta, Indonesia">Jakarta, Indonesia</option>
-                        <option value="Kuala Lumpur, Malaysia">Kuala Lumpur, Malaysia</option>
-                        <option value="Singapore, Singapore">Singapore, Singapore</option>
-                        <option value="Naypyidaw, Myanmar">Naypyidaw, Myanmar</option>
-                        <option value="Phnom Penh, Cambodia">Phnom Penh, Cambodia</option>
-                        <option value="Vientiane, Laos">Vientiane, Laos</option>
-                        <option value="New Delhi, India">New Delhi, India</option>
-                        <option value="Hanoi, Vietnam">Hanoi, Vietnam</option>
-                        <option value="Bandar Seri Begawan, Brunei">Bandar Seri Begawan, Brunei</option>
-                        <option value="Bangkok, Thailand">Bangkok, Thailand</option>
-                        <option value="Dili, Timor-Leste">Dili, Timor-Leste</option>
-                    </select><br><br>
-                    
-                    
-                    <label for="inputField">Flight Schedule</label><br>
-                    <input type="date" id="flightSched" name="flightSched" class="input"><br><br>
-                    
-                    
-                    <label for="inputField">Pay via</label><br>
-                    <select id="pay" name="pay">
-                        <option value="Visa">Visa</option>
-                        <option value="GCash">GCash</option>
-                        <option value="PayMaya">PayMaya</option>
-                        <option value="BDO">BDO</option>
-                        <option value="BPI">BPI</option>
-                    </select><br>
-                    
-                    <br><br>
-                    <button type="button" class="submit-button" onclick="submitData()">Submit Form</button><br><br>
-                    <p>Note: To update/cancel your Flight Reservation, Reach us <a href="https://formsubmit.co/el/xukayu">Here</a></p>
+        <div class="container register">
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row register-form">
+                                <div class="main-form">
+                                    <center>
+                                    <form method="post" autocomplete="off" name="google-sheet">
+                                        <div class="form-group"><br>
+                                            <label>Enter your Full Name</label><br>
+                                            <input type="text" name="Name" class="form-control" value="" required=""/><br><br>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Enter your Email</label><br>
+                                            <input type="text" name="Email" class="form-control" value="" required=""/><br><br>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Enter your Phone Number</label><br>
+                                            <input type="number" name="Phone" class="form-control" value="" required=""/><br><br>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Select Destination Address</label><br>
+                                            <select name="DestinationAddress" class="form-control" value="" required=""/><br><br>
+                                                <option value="Manila, Philippines">Manila, Philippines</option>
+                                                <option value="Taipei, Taiwan">Taipei, Taiwan</option>
+                                                <option value="Tokyo, Japan">Tokyo, Japan</option>
+                                                <option value="Beijing, China">Beijing, China</option>
+                                                <option value="Jakarta, Indonesia">Jakarta, Indonesia</option>
+                                                <option value="Kuala Lumpur, Malaysia">Kuala Lumpur, Malaysia</option>
+                                                <option value="Singapore, Singapore">Singapore, Singapore</option>
+                                                <option value="Naypyidaw, Myanmar">Naypyidaw, Myanmar</option>
+                                                <option value="Phnom Penh, Cambodia">Phnom Penh, Cambodia</option>
+                                                <option value="Vientiane, Laos">Vientiane, Laos</option>
+                                                <option value="New Delhi, India">New Delhi, India</option>
+                                                <option value="Hanoi, Vietnam">Hanoi, Vietnam</option>
+                                                <option value="Bandar Seri Begawan, Brunei">Bandar Seri Begawan, Brunei</option>
+                                                <option value="Bangkok, Thailand">Bangkok, Thailand</option>
+                                                <option value="Dili, Timor-Leste">Dili, Timor-Leste</option>
+                                            </select>
+                                        </div><br>
+                                        <div class="form-group">
+                                            <label>Flight Schedule</label><br>
+                                            <input type="date" name="FlightSchedule" class="form-control" value="" required=""/><br><br>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Payment Method</label><br>
+                                            <select name="PayMethod" class="form-control"value="" required=""/>
+                                                <option value="Visa">Visa</option>
+                                                <option value="GCash">GCash</option>
+                                                <option value="PayMaya">PayMaya</option>
+                                                <option value="BDO">BDO</option>
+                                                <option value="BPI">BPI</option>
+                                            </select><br><br>
+                                        </div>
+                                        <div class="form-group"><br>
+                                            <button type="submit" name="submit" class="btnSubmit-btn-block">Submit Button</button>
+                                        </div>
+                                    </form>
+                                </center>
+                                </div>
+                            </div>
+                        </div>
                 </div>
-            </center>
-        </form>
+            </div>
+        </div>
     </section>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxPVa5aLLhY_FAIp747aI-_T3DrsJW67zxH7YxyOUVa_zBJNTM_AMZKUmu8pvavXAZY/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Reservation Successfully"))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
-<script src="../Final-WebSys-Desktop/reservation_script.js"></script>
 </html>

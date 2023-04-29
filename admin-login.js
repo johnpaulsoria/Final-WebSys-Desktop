@@ -9,7 +9,7 @@ form.addEventListener('submit', (event) => {
     const password = passwordInput.value;
 
     if(username === 'admin' && password === 'admin'){
-        alert('Good Day, Sir!')
+        window.location.href = "https://docs.google.com/spreadsheets/d/1C_BiGRBXCkEPbrUAx2U_5rKdhdoTv9P1RqOWp_wwPqI/edit#gid=0";
     }else{
         alert('Not a good day, Sir!');
     }
