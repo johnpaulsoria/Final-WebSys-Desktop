@@ -66,7 +66,6 @@ input, select, textarea {
 	appearance: none;
 }
 
-
 footer {
 	background-color: none;
 	padding: 20px;
@@ -98,7 +97,6 @@ footer {
 	font-weight: bold;
   }
 
-  
 /* Basic */
 
 	html {
@@ -187,7 +185,7 @@ footer {
 	}
 
 		a:hover {
-			color: #d64760;
+			color: #ffa31a;
 		}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -417,7 +415,7 @@ footer {
 			}
 
 			#main .item.intro {
-				background-color: #CBE4DE;
+				background-color: #ffa31a;
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
@@ -850,7 +848,7 @@ footer {
 /* The navigation bar */
 .navbar {
     overflow: hidden;
-    background-color: #212121;
+    background-color: #292929;
     width: 100%; /* Full width */
 
 }
@@ -858,15 +856,15 @@ footer {
 .navbar a {
     float: right;
     display: block;
-    color: #f2f2f2;
+    color: #fff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 /* Change background on mouse-over */
 .navbar a:hover {
-    background: #ddd;
-    color: black;
+    background: #ffa31a;
+    color: #1b1b1b;
 }
 
 /* Main content */

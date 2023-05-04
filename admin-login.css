@@ -13,7 +13,10 @@ body{
 .container{
     background-color: #1b1b1b;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    border-top: 1px solid #ffa31a;
+    border-left: 1px solid #ffa31a;
+    border-bottom: 1px solid #ffa31a;
+    border-right: 1px solid #ffa31a;
     margin: 10px auto;
     width: 400px;
     padding: 20px;
@@ -23,13 +26,11 @@ h1{
     text-align: center;
     color: #fff;
 }
-
 span{
     background-color: #ffa31a;
     border-radius: 6%;
     color: #1b1b1b;
 }
-
 form{
     display: flex;
     flex-direction: column;
@@ -64,7 +65,7 @@ button {
 
 button:hover{
     background-color: transparent;
-    border: 1px solid #ffee00;
+    border: 1px solid #ffa31a;
     transition: 0.5s ease;
 }
 .home-button{
@@ -80,7 +81,7 @@ button:hover{
 }
 .home-button:hover{
     background-color: transparent;
-    border: 1px solid #ffee00;
+    border: 1px solid #ffa31a;
     transition: 0.5s ease;
 }
 @media (max-width: 768px){
